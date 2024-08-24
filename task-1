@@ -1,0 +1,58 @@
+def simple_calculator():
+    print("Welcome to the Simple Calculator!\n")
+
+    # Function to safely get a numeric input from the user
+    def get_number(prompt):
+        while True:
+            try:
+                value = float(input(prompt))
+                return value
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+    # Get first number
+    num1 = get_number("Enter the first number: ")
+
+    # Get second number
+    num2 = get_number("Enter the second number: ")
+
+    # Display operation menu
+    print("\nSelect an operation:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    print("4. Division (/)")
+
+    # Function to get a valid operation choice
+    def get_operation():
+        while True:
+            choice = input("Enter the number corresponding to the operation (1/2/3/4): ")
+            if choice in ['1', '2', '3', '4']:
+                return choice
+            else:
+                print("Invalid choice. Please select a valid operation.")
+
+    operation = get_operation()
+
+    # Perform the chosen operation
+    if operation == '1':
+        result = num1 + num2
+        operation_symbol = '+'
+    elif operation == '2':
+        result = num1 - num2
+        operation_symbol = '-'
+    elif operation == '3':
+        result = num1 * num2
+        operation_symbol = '*'
+    elif operation == '4':
+        if num2 == 0:
+            print("\nError: Division by zero is undefined.")
+            return
+        result = num1 / num2
+        operation_symbol = '/'
+
+    # Display the result
+    print(f"\nResult: {num1} {operation_symbol} {num2} = {result}")
+
+if __name__ == "__main__":
+    simple_calculator()
