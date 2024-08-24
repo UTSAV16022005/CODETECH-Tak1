@@ -64,5 +64,14 @@ We'll develop a console-based calculator that:
    - The result will be displayed after performing the calculation.
 
 ---
+4. **Output:**
+   Outputs with all operations 
+   <img width="792" alt="image" src="https://github.com/user-attachments/assets/09e99de7-d3e4-4007-aee1-c82686594d41">
+   <img width="844" alt="image" src="https://github.com/user-attachments/assets/6ac933b2-6822-4bc3-9ec0-d1ecde5d1f6c">
+   <img width="852" alt="image" src="https://github.com/user-attachments/assets/6016b772-f7c1-4c66-b125-77ab8aa05b74">
+   <img width="838" alt="image" src="https://github.com/user-attachments/assets/fc29d28e-27bb-42e3-9454-77666c1930cd">
+
+
+
 
 
